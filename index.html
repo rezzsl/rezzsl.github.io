@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Wenze Ren 任文泽 · Speech &amp; Audio AI</title>
+  <meta name="description" content="Wenze Ren (任文泽) is a Ph.D. student at National Taiwan University working on speech enhancement, speech quality assessment and large audio-language models.">
+  <meta name="author" content="Wenze Ren">
+  <meta name="theme-color" content="#F5F1EA" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#151311" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <!-- Social preview (link previews in WeChat, Slack, X, …) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wenze Ren 任文泽">
+  <meta property="og:description" content="Ph.D. student at National Taiwan University working on speech enhancement, speech quality assessment and audio-language models.">
+  <meta property="og:url" content="https://rezzsl.github.io/">
+  <meta property="og:image" content="https://rezzsl.github.io/assets/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') root.dataset.theme = t; } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&text=%E4%BB%BB%E6%96%87%E6%B3%BD&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="Wenze Ren, back to top">
+      <span class="brand__seal" aria-hidden="true">WR</span>
+      <span class="brand__name">Wenze Ren</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <ul class="site-nav__links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#honors">Honors</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode">
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" id="about">
+    <figure class="hero__photo">
+      <img src="assets/img/wudangshan.jpg"
+           srcset="assets/img/wudangshan-800.jpg 800w, assets/img/wudangshan.jpg 1280w"
+           sizes="(max-width: 760px) 100vw, 440px"
+           width="1280" height="1920" fetchpriority="high"
+           alt="Portrait of Wenze Ren">
+    </figure>
+
+    <div class="hero__panel">
+      <div class="hero__content">
+        <p class="eyebrow">Ph.D. Student · EECS · National Taiwan University</p>
+        <h1 class="hero__name">
+          <span class="hero__en">Wenze <em>Ren</em></span>
+          <span class="hero__zh" lang="zh-Hans">任文泽</span>
+        </h1>
+        <div class="hero__bio">
+          <p>I’m a second-year Ph.D. student at National Taiwan University, <span class="nowrap">co-advised</span> by <a href="https://speech.ee.ntu.edu.tw/~hylee/index.php" target="_blank" rel="noopener">Prof. Hung-yi Lee</a> at the <a href="https://speech.ee.ntu.edu.tw/" target="_blank" rel="noopener">Speech Processing &amp; Machine Learning Lab</a>, NTU, and <a href="https://www.citi.sinica.edu.tw/pages/yu.tsao/index_en.html" target="_blank" rel="noopener">Prof. Yu Tsao</a> at the <a href="https://bio-asplab.citi.sinica.edu.tw/" target="_blank" rel="noopener">Bio-ASP Lab</a>, Academia Sinica.</p>
+          <p>My research interests lie in speech and audio processing, with a focus on speech enhancement and speech quality assessment. My enhancement work spans single-channel, multi-channel, and multimodal settings, and I organized the first <a href="https://real-world-avse.github.io/" target="_blank" rel="noopener">Real-World Audio-Visual Speech Enhancement Challenge</a> at ISCSLP 2026. On the assessment side, I won <a href="#pub-highratemos">1st place in the AudioMOS Challenge 2025 Track 3</a>.</p>
+          <p>I have also contributed to large audio-language models and benchmarks, including <span class="nowrap">Dynamic-SUPERB</span> <span class="nowrap">Phase-2</span>, DeSTA2, and <span class="nowrap">Game-Time</span>.</p>
+          <p>I am currently working on speech representations for large audio models, neural audio codecs, and LM-based front-end speech processing.</p>
+        </div>
+        <ul class="hero__links">
+          <li>
+            <a class="btn btn--solid" href="https://scholar.google.com/citations?user=w5F00dYAAAAJ" target="_blank" rel="noopener">
+              <svg class="is-filled" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1.5 9.5 12 16l8.5-5.3V17h2V9.5L12 3Z"/><path d="M5.5 13v4.2c1.6 1.9 3.9 2.8 6.5 2.8s4.9-.9 6.5-2.8V13L12 17l-6.5-4Z"/></svg>
+              Google Scholar
+            </a>
+          </li>
+          <li><a class="icon-link" href="#contact" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg></a></li>
+          <li><a class="icon-link" href="https://github.com/rezzsl" target="_blank" rel="noopener" aria-label="GitHub"><svg class="is-filled" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a9.5 9.5 0 0 0-3 18.5c.5.1.7-.2.7-.5v-1.7c-2.7.6-3.3-1.2-3.3-1.2-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.1-.2-4.4-1.1-4.4-4.8 0-1.1.4-1.9 1-2.6-.1-.2-.4-1.2.1-2.6 0 0 .8-.3 2.6 1a9 9 0 0 1 4.8 0c1.8-1.3 2.6-1 2.6-1 .5 1.4.2 2.4.1 2.6.6.7 1 1.5 1 2.6 0 3.7-2.3 4.6-4.4 4.8.3.3.6.9.6 1.8v2.6c0 .3.2.6.7.5A9.5 9.5 0 0 0 12 2.5Z"/></svg></a></li>
+          <li><a class="icon-link" href="https://www.linkedin.com/in/rezzsl/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="is-filled" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Z"/><path d="M9.5 9.75H13.3V11.25H13.36C13.89 10.25 15.19 9.2 17.13 9.2C21.16 9.2 21.9 11.85 21.9 15.3V20.75H17.9V15.92C17.9 14.77 17.88 13.29 16.3 13.29C14.69 13.29 14.45 14.54 14.45 15.84V20.75H9.5Z"/></svg></a></li>
+          <li><a class="icon-link" href="#contact" data-open-wechat aria-label="WeChat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.63 15.26A7.3 6.1 0 1 1 17.06 9.84"/><path d="M4.64 13.51 3.9 16.3l2.25-1.82"/><path d="M21.8 14.6a5.6 4.8 0 1 1-11.2 0 5.6 4.8 0 1 1 11.2 0Z"/><path d="m20.16 17.99 1.04 2.31-2.63-1.35"/><path d="M7.3 7.8h.01M12.1 7.8h.01M14.3 13.4h.01M18.1 13.4h.01"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- ============ News ============ -->
+    <section class="section" id="news">
+      <header class="section__head reveal">
+        <span class="section__index">01</span>
+        <h2 class="section__title">News</h2>
+        <nav class="year-nav" aria-label="News by year" data-news-nav></nav>
+      </header>
+
+      <div class="section__body">
+        <ol class="news reveal">
+          <li class="news__year">
+            <h3 class="news__label">2026</h3>
+            <ul class="news__items">
+              <li>We successfully hosted the first <strong>Real-World Audio-Visual Speech Enhancement (AVSE) Challenge</strong>. We look forward to seeing you at <strong>ISCSLP 2026</strong> in Penang, Malaysia! <span class="nowrap"><a href="https://real-world-avse.github.io/" target="_blank" rel="noopener">Website</a> · <a href="https://avse.renwenze.com/" target="_blank" rel="noopener">Leaderboard</a> · <a href="https://github.com/Real-World-AVSE/Baseline" target="_blank" rel="noopener">Baseline</a></span></li>
+              <li>Two papers accepted to <strong>IEEE SLT 2026</strong>: <a href="#pub-encoder-selection">correlation-guided encoder selection</a> for multi-encoder audio LLMs, and a <a href="#pub-akb">holistic evaluation of auditory knowledge in LLM backbones</a>.</li>
+              <li><a href="#pub-rrp-voice"><strong>RRP-Voice</strong></a> (first author), a longitudinal voice dataset and benchmark for recurrent respiratory papillomatosis detection, was accepted to <strong>APSIPA ASC 2026</strong>.</li>
+              <li><a href="#pub-taigispeech"><strong>TaigiSpeech</strong></a> (core contributor), a real-world Taiwanese speech-intent dataset, was accepted to <strong>Interspeech 2026</strong> as a long paper.</li>
+              <li><a href="#pub-mos-bias"><strong>MOS-Bias</strong></a> (first author), which uncovers hidden gender bias in speech quality assessment, was accepted to <strong>Interspeech 2026</strong>.</li>
+              <li><a href="#pub-game-time"><strong>Game-Time</strong></a> accepted to <strong>ICASSP 2026</strong>.</li>
+              <li><a href="#pub-desta25-audio"><strong>DeSTA2.5-Audio</strong></a> and <a href="#pub-codecfake-plus"><strong>CodecFake+</strong></a> published in <strong>IEEE TASLP</strong>.</li>
+            </ul>
+          </li>
+          <li class="news__year">
+            <h3 class="news__label">2025</h3>
+            <ul class="news__items">
+              <li><a href="#pub-highratemos"><strong>HighRateMOS</strong></a> (first author), sampling-rate-aware speech quality assessment, accepted to <strong>IEEE ASRU 2025</strong>.</li>
+              <li>Two papers at the <strong>Interspeech 2025</strong> AVSEC workshop, including <a href="#pub-bav-mossformer2"><strong>BAV-MossFormer2</strong></a> (first author) for binaural audio-visual enhancement.</li>
+              <li>Joint spectral–spatial <a href="#pub-mamba-multichannel-se">Mamba for multichannel speech enhancement</a> (first author) at <strong>ICASSP 2025</strong>.</li>
+              <li><a href="#pub-dynamic-superb-2"><strong>Dynamic-SUPERB Phase-2</strong></a> at <strong>ICLR 2025</strong>.</li>
+            </ul>
+          </li>
+          <li class="news__year">
+            <h3 class="news__label">2024</h3>
+            <ul class="news__items">
+              <li><a href="#pub-emo-codec"><strong>EMO-Codec</strong></a> (first author) at <strong>APSIPA ASC 2024</strong>.</li>
+              <li><a href="#pub-dfadd"><strong>DFADD</strong></a> at <strong>IEEE SLT 2024</strong>.</li>
+              <li><a href="#pub-robust-avse">Robust audio-visual speech enhancement</a> (first author) at <strong>O-COCOSDA 2024</strong>.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ Publications ============ -->
+    <section class="section" id="publications">
+      <header class="section__head reveal">
+        <span class="section__index">02</span>
+        <h2 class="section__title">Publications</h2>
+        <p class="section__aside"><a href="https://scholar.google.com/citations?user=w5F00dYAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a></p>
+        <nav class="year-nav" aria-label="Jump to year" data-year-nav></nav>
+      </header>
+
+      <div class="section__body">
+        <div class="pub-list" data-pub-list aria-live="polite"></div>
+        <noscript><p class="pub-empty">The publication list needs JavaScript. You can also find it on <a href="https://scholar.google.com/citations?user=w5F00dYAAAAJ">Google Scholar</a>.</p></noscript>
+      </div>
+    </section>
+
+    <!-- ============ Honors ============ -->
+    <section class="section" id="honors">
+      <header class="section__head reveal">
+        <span class="section__index">03</span>
+        <h2 class="section__title">Honors</h2>
+        <p class="section__aside">Competitions &amp; awards</p>
+      </header>
+
+      <div class="section__body">
+        <!-- Grouped by year, then by competition; one <li> in .honor__results per track/result.
+             Add "honor__award--top" to highlight a 1st place. -->
+        <ol class="honors reveal">
+          <li class="honors__year">
+            <h3 class="honors__label">2025</h3>
+            <div class="honors__items">
+              <article class="honor">
+                <h4 class="honor__title">AudioMOS Challenge <span class="honor__venue">· ASRU 2025</span></h4>
+                <ul class="honor__results">
+                  <li>
+                    <span class="honor__award honor__award--top">1st Place</span>
+                    <span class="honor__track">Track 3: MOS prediction for speech in high sampling frequencies <a class="honor__paper" href="#pub-highratemos">Paper: HighRateMOS</a></span>
+                  </li>
+                </ul>
+              </article>
+              <article class="honor">
+                <h4 class="honor__title"><abbr title="4th COG-MHEAR Audio-Visual Speech Enhancement Challenge">AVSEC-4</abbr> Challenge <span class="honor__venue">· Interspeech 2025</span></h4>
+                <ul class="honor__results">
+                  <li>
+                    <span class="honor__award honor__award--top">1st Place</span>
+                    <span class="honor__track">Single-Channel Track</span>
+                  </li>
+                  <li>
+                    <span class="honor__award">2nd Place</span>
+                    <span class="honor__track">Dual-Channel Track</span>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ Service ============ -->
+    <section class="section" id="service">
+      <header class="section__head reveal">
+        <span class="section__index">04</span>
+        <h2 class="section__title">Service</h2>
+      </header>
+
+      <div class="section__body">
+        <div class="service reveal">
+          <h3 class="service__role">Reviewer</h3>
+          <dl class="service__list">
+            <div class="service__row">
+              <dt>Journal</dt>
+              <dd>IEEE Transactions on Audio, Speech and Language Processing (TASLP)</dd>
+            </div>
+            <div class="service__row">
+              <dt>Conferences</dt>
+              <dd>ICASSP, SLT, Interspeech, ASRU, etc.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Contact ============ -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <div class="contact__body reveal">
+        <div class="contact__intro">
+          <p class="eyebrow">05 · Contact</p>
+          <h2 class="contact__title">Let’s talk speech.</h2>
+          <p class="contact__text">If there’s anything you’d like to chat about, or you’re interested in collaborating, or even if you’d just like to make a new friend, please feel free to reach out anytime.</p>
+        </div>
+        <div class="contact__details">
+          <!-- Email addresses are written as user|domain; main.js turns them into mailto links
+               (keeps them away from simple spam scrapers). -->
+          <dl class="contact__methods">
+            <div class="contact__method">
+              <dt>Email</dt>
+              <dd>
+                <a data-email="d14945014|ntu.edu.tw" href="#contact">d14945014 [at] ntu.edu.tw</a>
+                <a data-email="renwenzeren|gmail.com" href="#contact">renwenzeren [at] gmail.com</a>
+              </dd>
+            </div>
+            <div class="contact__method contact__method--wechat">
+              <dt>WeChat</dt>
+              <dd>
+                <details class="wechat">
+                  <summary class="wechat__toggle">
+                    <span class="wechat__show">Show QR code</span>
+                    <span class="wechat__hide">Hide QR code</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                  </summary>
+                  <div class="wechat__panel">
+                    <img src="assets/img/wechat-qr.png" width="400" height="400" loading="lazy" alt="WeChat QR code to add Wenze Ren">
+                    <span>Scan the QR code to add me on WeChat</span>
+                  </div>
+                </details>
+              </dd>
+            </div>
+          </dl>
+          <ul class="contact__links">
+            <li><a href="https://scholar.google.com/citations?user=w5F00dYAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+            <li><a href="https://github.com/rezzsl" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/rezzsl/" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>© 2026 Wenze Ren</p>
+        <p>Last updated September 2026</p>
+      </div>
+    </footer>
+  </section>
+
+  <script src="assets/js/publications.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
