@@ -45,6 +45,24 @@ window.PUBLICATIONS = [
     },
   },
   {
+    id: "emotion-preference",
+    title: "Learning to Prefer Reliably: Error-Augmented Emotion Preference Optimization with Calibrated Fusion",
+    authors: [
+      "Zilong Huang", "Junyi Peng", "Junjie Li", "Kai Li", "Wenze Ren", "Kong Aik Lee", "Man-Wai Mak",
+      "Tatsuya Kawahara"
+    ],
+    year: 2026,
+    venue: "MRAC 2026",
+    venueFull: "ACM Multimedia 2026 Workshop (MRAC '26)",
+    type: "workshop",
+    topics: ["alm"],
+    citations: 0,
+    links: {
+      arxiv: "https://arxiv.org/abs/2608.24730",
+      pdf: "https://arxiv.org/pdf/2608.24730",
+    },
+  },
+  {
     id: "rrp-voice",
     title: "RRP-Voice: A Longitudinal Dataset and Benchmark for Recurrent Respiratory Papillomatosis Detection",
     authors: [
