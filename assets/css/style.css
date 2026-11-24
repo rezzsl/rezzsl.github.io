@@ -441,6 +441,18 @@ button, input { font: inherit; color: inherit; }
   font: 500 2rem/1 var(--font-display); font-variant-numeric: lining-nums;
 }
 .news__items { display: grid; gap: 14px; }
+/* more than six items: the list keeps the height of the newest six (set in main.js) and scrolls */
+.news__items.is-scrollable {
+  overflow-y: scroll; /* scrollbar always takes its space, so main.js measures the final line wrapping */
+  padding-right: 16px;
+}
+/* always-visible thin scrollbar, so it is clear there is more to read */
+.news__items.is-scrollable::-webkit-scrollbar { width: 6px; }
+.news__items.is-scrollable::-webkit-scrollbar-track { background: var(--line); border-radius: 999px; }
+.news__items.is-scrollable::-webkit-scrollbar-thumb { background: var(--ink-3); border-radius: 999px; }
+@supports (-moz-appearance: none) {
+  .news__items.is-scrollable { scrollbar-width: thin; scrollbar-color: var(--ink-3) var(--line); }
+}
 .news__items li { position: relative; padding-left: 22px; color: var(--ink-2); }
 .news__items li::before {
   content: ""; position: absolute; left: 2px; top: 0.66em;

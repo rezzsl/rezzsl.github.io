@@ -136,6 +136,35 @@
 
   var newsNav = $('[data-news-nav]');
   var newsYears = $$('.news__year');
+
+  // A year's list is exactly as tall as its newest NEWS_SHOWN items; older ones scroll inside it.
+  var NEWS_SHOWN = 6;
+  function fitNewsLists() {
+    newsYears.forEach(function (block) {
+      if (block.hidden) return; // hidden years have no size; they are fitted when shown
+      var list = $('.news__items', block);
+      var items = $$(':scope > li', list);
+      list.style.maxHeight = '';
+      list.classList.toggle('is-scrollable', items.length > NEWS_SHOWN);
+      if (items.length <= NEWS_SHOWN) return;
+      var height = items[NEWS_SHOWN - 1].getBoundingClientRect().bottom - list.getBoundingClientRect().top;
+      list.style.maxHeight = Math.ceil(height) + 'px';
+    });
+  }
+  // Item heights change when web fonts arrive or the width changes, so refit whenever an item resizes.
+  var fitFrame;
+  function scheduleFit() {
+    cancelAnimationFrame(fitFrame);
+    fitFrame = requestAnimationFrame(fitNewsLists);
+  }
+  if ('ResizeObserver' in window) {
+    var fitObserver = new ResizeObserver(scheduleFit);
+    $$('.news__items > li').forEach(function (li) { fitObserver.observe(li); });
+  }
+  window.addEventListener('resize', scheduleFit);
+  window.addEventListener('load', fitNewsLists);
+  if (document.fonts && document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', fitNewsLists);
+
   if (newsNav && newsYears.length > 1) {
     newsNav.innerHTML = newsYears.map(function (block) {
       var year = $('.news__label', block).textContent.trim();
@@ -158,6 +187,7 @@
         if (a.getAttribute('data-part') === year) a.setAttribute('aria-current', 'true');
         else a.removeAttribute('aria-current');
       });
+      fitNewsLists();
     };
     showNewsYear(newsYears[0].getAttribute('data-part'), false);
 
@@ -172,6 +202,7 @@
       }
     });
   }
+  fitNewsLists();
 
   /* ---------- Publications ---------- */
 
