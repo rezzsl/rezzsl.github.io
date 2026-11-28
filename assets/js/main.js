@@ -126,6 +126,14 @@
     });
   });
 
+  /* ---------- Footer: "Last updated" is the month the page was last published ---------- */
+
+  var updated = $('[data-last-updated]');
+  var published = new Date(document.lastModified); // GitHub Pages sends the deploy time as Last-Modified
+  if (updated && !isNaN(published)) {
+    updated.textContent = published.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+  }
+
   /* ---------- Placeholder links (fill these in index.html) ---------- */
 
   $$('a[data-todo][href="#"]').forEach(function (a) {

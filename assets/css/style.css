@@ -665,19 +665,13 @@ button, input { font: inherit; color: inherit; }
   max-width: var(--maxw); margin: 0 auto;
   padding: clamp(72px, 10vw, 128px) var(--gutter);
 }
-.contact .eyebrow { color: var(--on-wall-2); }
-.contact__title {
-  margin-top: 18px;
-  font: 500 clamp(2.8rem, 6vw, 5rem)/1 var(--font-display);
-  letter-spacing: -0.015em;
-}
-.contact__text { margin-top: 18px; max-width: 46ch; font-size: 1.08rem; }
+/* same heading as the other sections (index + roof mark + serif title), in light colours on the red band */
+.contact .section__index { color: var(--on-wall-2); }
+.contact__text { margin-top: 20px; max-width: 46ch; font-size: 1.08rem; }
 .contact__body {
   display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: start; gap: 44px clamp(40px, 7vw, 112px);
 }
-/* line the details up with the title rather than the small eyebrow above it */
-.contact__details { padding-top: 40px; }
 .contact__methods { display: grid; gap: 24px; }
 .contact__method {
   display: grid; grid-template-columns: 84px minmax(0, 1fr);
@@ -752,7 +746,6 @@ button, input { font: inherit; color: inherit; }
 
 @media (max-width: 860px) {
   .contact__body { grid-template-columns: minmax(0, 1fr); }
-  .contact__details { padding-top: 0; }
 }
 
 @media (max-width: 720px) {

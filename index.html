@@ -30,7 +30,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&text=%E4%BB%BB%E6%96%87%E6%B3%BD&display=swap">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- ?v= is bumped whenever style.css / publications.js / main.js change, so browsers never mix a new page with cached old files -->
+  <link rel="stylesheet" href="assets/css/style.css?v=20261128">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -234,8 +235,8 @@
     <div class="contact__inner">
       <div class="contact__body reveal">
         <div class="contact__intro">
-          <p class="eyebrow">05 · Contact</p>
-          <h2 class="contact__title">Let’s talk speech.</h2>
+          <span class="section__index">05</span>
+          <h2 class="section__title">Contact</h2>
           <p class="contact__text">If there’s anything you’d like to chat about, or you’re interested in collaborating, or even if you’d just like to make a new friend, please feel free to reach out anytime.</p>
         </div>
         <div class="contact__details">
@@ -277,12 +278,12 @@
     <footer class="site-footer">
       <div class="site-footer__inner">
         <p>© 2026 Wenze Ren</p>
-        <p>Last updated September 2026</p>
+        <p>Last updated <span data-last-updated>November 2026</span></p>
       </div>
     </footer>
   </section>
 
-  <script src="assets/js/publications.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/publications.js?v=20261128"></script>
+  <script src="assets/js/main.js?v=20261128"></script>
 </body>
 </html>
